@@ -4,6 +4,8 @@
 # 题目
 > 已知矩阵的大小定义为矩阵中所有元素的和。给定一个矩阵，你的任务是找到最大的非空(大小至少是1 * 1)子矩阵。 比如，如下4 * 4的矩阵 0 -2 -7 0 9 2 -6 2 -4 1 -4 1 -1 8 0 -2 的最大子矩阵是 9 2 -4 1 -1 8 这个子矩阵的大小是15。
 
+![image](https://github.com/ShaoQiBNU/Maximum_submatrix_sum/blob/master/images/1.jpeg)
+
 ## 输入
 > 输入是一个N * N的矩阵。输入的第一行给出N (0 < N <= 100)。在后面的若干行中，依次（首先从左到右给出第一行的N个整数，再从左到右给出第二行的N个整数……）给出矩阵中的N2个整数，整数之间由空白字符分隔（空格或者空行）。已知矩阵中整数的范围都在[-127, 127]。
 
@@ -31,5 +33,15 @@
   当i = j时，则最大子矩阵为第i行的连续最大和
   当i != j时，现在我们已经直到最大子矩阵的行，要求的是其所在的列
   我们把从第i行到第j行的所有行相加，得到一个只有一行的一维数组，则该一维数组的连续最大和就是最大子矩阵。
-  
-  求一维数组的连续最大和动态规划问题，设DP[i]=以v[i]元素结尾的连续最大和，则DP[i] = max(DP[i-1] + v[i], v[i])，初始条件为DP[0] = v[0]
+
+![image](https://github.com/ShaoQiBNU/Maximum_submatrix_sum/blob/master/images/2.jpeg)
+
+![image](https://github.com/ShaoQiBNU/Maximum_submatrix_sum/blob/master/images/3.jpeg)
+
+> 求一维数组的连续最大和动态规划问题，设DP[i]=以v[i]元素结尾的连续最大和，则DP[i] = max(DP[i-1] + v[i], v[i])，初始条件为DP[0] = v[0]
+
+## 代码
+```C++
+
+```
+
